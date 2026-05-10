@@ -98,6 +98,11 @@ const Works = () => {
     moveY.current(mouse.current.y);
   };
 
+  const handleProjectClick = (href) => {
+    if (!href) return;
+    window.open(href, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section id="work" className="flex flex-col min-h-screen">
       <AnimatedHeaderSection
@@ -118,6 +123,7 @@ const Works = () => {
             className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
+            onClick={() => handleProjectClick(project.href)}
           >
             {/* overlay */}
             <div
@@ -137,7 +143,7 @@ const Works = () => {
             {/* divider */}
             <div className="w-full h-0.5 bg-black/80" />
             {/* framework */}
-            <div className="flex px-10 text-xs leading-loose uppercase transtion-all duration-500 md:text-sm gap-x-5 md:group-hover:px-12">
+            <div className="flex px-10 text-xs leading-loose uppercase transition-all duration-500 md:text-sm gap-x-5 md:group-hover:px-12">
               {project.frameworks.map((framework) => (
                 <p
                   key={framework.id}

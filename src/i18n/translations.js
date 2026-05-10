@@ -143,7 +143,7 @@ My goal is to make advertising, the website, and strategy work together and help
         {
           id: 1,
           name: "Uvelir1c.ru",
-          href: "",
+          href: "https://uvelir1c.ru/",
           image: "/assets/projects/uvelir1c.webp",
           bgImage: "/assets/backgrounds/blanket.webp",
           frameworks: [
@@ -156,7 +156,7 @@ My goal is to make advertising, the website, and strategy work together and help
         {
           id: 2,
           name: "Avrora-atl.ru",
-          href: "",
+          href: "https://avrora-atl.ru/",
           image: "/assets/projects/avr-atl.webp",
           bgImage: "/assets/backgrounds/curtains.webp",
           frameworks: [
@@ -169,7 +169,7 @@ My goal is to make advertising, the website, and strategy work together and help
         {
           id: 3,
           name: "Web-converter.ru",
-          href: "",
+          href: "https://web-converter.ru/",
           image: "/assets/projects/web-converter.webp",
           bgImage: "/assets/backgrounds/map.webp",
           frameworks: [
@@ -388,7 +388,7 @@ My goal is to make advertising, the website, and strategy work together and help
         {
           id: 1,
           name: "Uvelir1c.ru",
-          href: "",
+          href: "https://uvelir1c.ru/",
           image: "/assets/projects/uvelir1c.webp",
           bgImage: "/assets/backgrounds/blanket.webp",
           frameworks: [
@@ -401,7 +401,7 @@ My goal is to make advertising, the website, and strategy work together and help
         {
           id: 2,
           name: "Avrora-atl.ru",
-          href: "",
+          href: "https://avrora-atl.ru/",
           image: "/assets/projects/avr-atl.webp",
           bgImage: "/assets/backgrounds/curtains.webp",
           frameworks: [
@@ -414,7 +414,7 @@ My goal is to make advertising, the website, and strategy work together and help
         {
           id: 3,
           name: "Web-converter.ru",
-          href: "",
+          href: "https://web-converter.ru/",
           image: "/assets/projects/web-converter.webp",
           bgImage: "/assets/backgrounds/map.webp",
           frameworks: [
