@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { useLanguage } from "../i18n/useLanguage";
 
 const Navbar = () => {
-  const { t, toggleLanguage } = useLanguage();
+  const { t } = useLanguage();
   const socials = t.socials;
   const navRef = useRef(null);
   const linksRef = useRef([]);
@@ -164,13 +164,6 @@ const Navbar = () => {
           className="block w-8 h-0.5 bg-white rounded-full origin-center"
         ></span>
       </div>
-      <button
-        type="button"
-        onClick={toggleLanguage}
-        className="fixed z-50 flex items-center justify-center w-12 h-12 text-sm font-light text-white transition-colors duration-300 bg-black rounded-full top-4 left-10 hover:text-white/80"
-      >
-        {t.languageLabel}
-      </button>
     </>
   );
 };

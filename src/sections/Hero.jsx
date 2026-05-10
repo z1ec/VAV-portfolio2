@@ -6,9 +6,19 @@ import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { useLanguage } from "../i18n/useLanguage";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
-  const { t } = useLanguage();
+  const { t, toggleLanguage } = useLanguage();
   return (
-    <section id="home" className="flex flex-col justify-end min-h-screen">
+    <section
+      id="home"
+      className="relative flex flex-col justify-end min-h-screen"
+    >
+      <button
+        type="button"
+        onClick={toggleLanguage}
+        className="absolute z-10 flex items-center justify-center w-12 h-12 text-sm font-light text-white transition-colors duration-300 bg-black rounded-full top-4 left-10 hover:text-white/80"
+      >
+        {t.languageLabel}
+      </button>
       <AnimatedHeaderSection
         subTitle={t.hero.subTitle}
         title={t.hero.title}
