@@ -115,6 +115,23 @@ When I am not busy with projects:
 ◆ breaking down websites and ad campaigns to understand why some sell better than others
 ◆ studying the Monsters of Marketing course by Konstantin Gorbunov to better understand strategy, advertising, and systematic customer acquisition`,
     },
+    marketing: {
+      subTitle: "Traffic, analytics, and strategy",
+      title: "Marketing",
+      text: `I help businesses get not just traffic, but real leads from their websites.
+I set up Yandex Direct and Google Ads, work with SEO, design sales funnels, create media plans, and improve the customer journey from the first website visit to a submitted lead. I am also currently studying the Monsters of Marketing course by Konstantin Gorbunov and applying that knowledge in real projects.
+My goal is to make advertising, the website, and strategy work together and help businesses attract customers in a clear and measurable way.`,
+      channelText: "More about marketing in my Telegram channel",
+      channelHref: "https://t.me/fomin_direct",
+      items: [
+        "Yandex Direct / Google Ads",
+        "SEO Optimization",
+        "Traffic & Lead Analytics",
+        "Sales Funnels",
+        "Media Plans",
+        "Marketing Strategy",
+      ],
+    },
     works: {
       subTitle: "Logic meets aesthetics",
       title: "Works",
@@ -342,6 +359,23 @@ When I am not busy with projects:
 ◆ тестирую новые подходы к лендингам, воронкам и офферам
 ◆ разбираю сайты и рекламные кампании, чтобы понимать, почему одни продают лучше других
 ◆ прохожу обучение на курсе «Монстры маркетинга» от Константина Горбунова, чтобы глубже разбираться в стратегии, рекламе и системном привлечении клиентов`,
+    },
+    marketing: {
+      subTitle: "Трафик, аналитика и стратегия",
+      title: "Маркетинг",
+      text: `Я помогаю бизнесу получать не просто трафик, а реальные заявки с сайта.
+Настраиваю Яндекс Директ и Google Ads, работаю с SEO, продумываю воронки продаж, составляю медиапланы и улучшаю путь клиента от первого перехода на сайт до заявки. Сейчас также прохожу курс «Монстры маркетинга» от Константина Горбунова и применяю эти знания в реальных проектах.
+Моя задача сделать так, чтобы реклама, сайт и стратегия работали вместе и помогали бизнесу привлекать клиентов понятным и измеримым способом.`,
+      channelText: "Подробнее про маркетинг в моем Telegram-канале",
+      channelHref: "https://t.me/fomin_direct",
+      items: [
+        "Яндекс Директ / Google Ads",
+        "SEO-оптимизация",
+        "Анализ трафика и заявок",
+        "Воронки продаж",
+        "Медиапланы",
+        "Маркетинговая стратегия",
+      ],
     },
     works: {
       subTitle: "Логика встречает эстетику",
