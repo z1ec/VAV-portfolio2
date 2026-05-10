@@ -109,110 +109,90 @@ results driven webs/apps`,
     so websites do not just work,
     but bring real customers`,
       imageAlt: "marketer-developer portrait",
-      body: `I am as passionate about marketing as I am about development. For me, a website is not just a polished interface, but a tool that should attract attention, communicate product value, and turn visitors into leads. That is why I look at every project from two angles: as a developer responsible for speed, structure, and reliability, and as a marketer focused on traffic, conversion, and user behavior.
-When I am not working on projects:
-studying ads, SEO, analytics, and user behavior
-testing new approaches to landing pages, funnels, and offers
-breaking down websites and ad campaigns to understand why some sell better than others
-studying the Monsters of Marketing course by Konstantin Gorbunov to better understand strategy, advertising, and systematic customer acquisition`,
+      body: `For me, a website is not just a polished interface, but a tool that should attract attention, communicate product value, and turn visitors into leads.
+When I am not busy with projects:
+◆ testing new approaches to landing pages, funnels, and offers
+◆ breaking down websites and ad campaigns to understand why some sell better than others
+◆ studying the Monsters of Marketing course by Konstantin Gorbunov to better understand strategy, advertising, and systematic customer acquisition`,
     },
     works: {
-      subTitle: "Logic meets Aesthetics, Seamlessly",
+      subTitle: "Logic meets aesthetics",
       title: "Works",
-      text: `Featured projects that have been meticulously
-    crafted with passion to drive
-    results and impact.`,
+      text: `Selected projects, carefully
+    created with attention to detail,
+    results, and users.`,
       previewAlt: "project preview",
       projects: [
         {
           id: 1,
-          name: "Mobile Accessories E-commerce",
-          description:
-            "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+          name: "Uvelir1c.ru",
           href: "",
           image: "/assets/projects/mobile-accessories-store.jpg",
           bgImage: "/assets/backgrounds/blanket.jpg",
           frameworks: [
-            { id: 1, name: "React" },
-            { id: 2, name: "Next.js" },
-            { id: 3, name: "Node.js" },
-            { id: 4, name: "MongoDB" },
-            { id: 5, name: "Tailwind CSS" },
+            { id: 1, name: "Insales" },
+            { id: 2, name: "Yandex Metrica" },
+            { id: 3, name: "Yandex Direct" },
+            { id: 4, name: "SEO" },
           ],
         },
         {
           id: 2,
-          name: "Plant Shop E-commerce",
-          description:
-            "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+          name: "Avrora-atl.ru",
           href: "",
           image: "/assets/projects/plant-shop.jpg",
           bgImage: "/assets/backgrounds/curtains.jpg",
           frameworks: [
-            { id: 1, name: "React" },
-            { id: 2, name: "Next.js" },
-            { id: 3, name: "Stripe API" },
-            { id: 4, name: "Tailwind CSS" },
+            { id: 1, name: "Landing Page" },
+            { id: 2, name: "TailwindCSS" },
+            { id: 3, name: "JavaScript" },
+            { id: 4, name: "HTML5" },
           ],
         },
         {
           id: 3,
-          name: "Apple Tech Marketplace",
-          description:
-            "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+          name: "Web-converter.ru",
           href: "",
           image: "/assets/projects/apple-tech-store.jpg",
           bgImage: "/assets/backgrounds/map.jpg",
           frameworks: [
-            { id: 1, name: "Blazor" },
-            { id: 2, name: "ASP.NET Core" },
-            { id: 3, name: "SQL Server" },
-            { id: 4, name: "Bootstrap" },
+            { id: 1, name: "Python" },
+            { id: 2, name: "TailwindCSS" },
+            { id: 3, name: "JavaScript" },
           ],
         },
         {
           id: 4,
-          name: "Electronics & Gadgets Store",
-          description:
-            "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
+          name: "Apple Tech Online Store",
           href: "",
           image: "/assets/projects/electronics-store.jpg",
           bgImage: "/assets/backgrounds/poster.jpg",
           frameworks: [
-            { id: 1, name: "Vue.js" },
-            { id: 2, name: "Laravel" },
-            { id: 3, name: "MySQL" },
-            { id: 4, name: "SCSS" },
+            { id: 1, name: "Insales" },
+            { id: 2, name: "Yandex Metrica" },
           ],
         },
         {
           id: 5,
-          name: "Home Decor Marketplace",
-          description:
-            "A curated collection of designer home decor items, including furniture and artisan vases.",
+          name: "Jewelry Online Store",
           href: "",
           image: "/assets/projects/home-decor-store.jpg",
           bgImage: "/assets/backgrounds/table.jpg",
           frameworks: [
-            { id: 1, name: "Angular" },
-            { id: 2, name: "Firebase" },
-            { id: 3, name: "GraphQL" },
-            { id: 4, name: "Material UI" },
+            { id: 1, name: "Insales" },
+            { id: 2, name: "Yandex Metrica" },
+            { id: 3, name: "Yandex Direct" },
+            { id: 4, name: "SEO" },
           ],
         },
         {
           id: 6,
-          name: "Digital Game Store",
-          description:
-            "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
+          name: "Plant Online Store",
           href: "",
           image: "/assets/projects/game-store.jpg",
           bgImage: "/assets/backgrounds/curtains.jpg",
           frameworks: [
-            { id: 1, name: "Svelte" },
-            { id: 2, name: "Node.js" },
-            { id: 3, name: "MongoDB" },
-            { id: 4, name: "Chakra UI" },
+            { id: 1, name: "Shopify" },
           ],
         },
       ],
@@ -358,110 +338,90 @@ studying the Monsters of Marketing course by Konstantin Gorbunov to better under
     чтобы сайты не просто работали,
     а приводили клиентов`,
       imageAlt: "портрет маркетолога-разработчика",
-      body: `Я увлекаюсь маркетингом так же сильно, как и разработкой. Для меня сайт — это не просто красивый интерфейс, а инструмент, который должен привлекать внимание, объяснять ценность продукта и приводить к заявкам. Поэтому я смотрю на проект сразу с двух сторон: как разработчик, который отвечает за скорость, структуру и надежность, и как маркетолог, который думает о трафике, конверсии и поведении пользователя.
-Когда я не работаю над проектами:
-изучаю рекламу, SEO, аналитику и поведение пользователей
-тестирую новые подходы к лендингам, воронкам и офферам
-разбираю сайты и рекламные кампании, чтобы понимать, почему одни продают лучше других
-прохожу обучение на курсе «Монстры маркетинга» от Константина Горбунова, чтобы глубже разбираться в стратегии, рекламе и системном привлечении клиентов`,
+      body: `Для меня сайт — это не просто красивый интерфейс, а инструмент, который должен привлекать внимание, объяснять ценность продукта и приводить к заявкам.
+Когда я не занят проектами:
+◆ тестирую новые подходы к лендингам, воронкам и офферам
+◆ разбираю сайты и рекламные кампании, чтобы понимать, почему одни продают лучше других
+◆ прохожу обучение на курсе «Монстры маркетинга» от Константина Горбунова, чтобы глубже разбираться в стратегии, рекламе и системном привлечении клиентов`,
     },
     works: {
       subTitle: "Логика встречает эстетику",
       title: "Работы",
       text: `Избранные проекты, тщательно
     созданные с вниманием к деталям,
-    результату и влиянию.`,
+    результату и пользователю`,
       previewAlt: "превью проекта",
       projects: [
         {
           id: 1,
-          name: "E-commerce аксессуаров для смартфонов",
-          description:
-            "Интернет-магазин аксессуаров для телефонов: чехлы, зарядки, кабели и power bank с поддержкой MagSafe.",
+          name: "Uvelir1c.ru",
           href: "",
           image: "/assets/projects/mobile-accessories-store.jpg",
           bgImage: "/assets/backgrounds/blanket.jpg",
           frameworks: [
-            { id: 1, name: "React" },
-            { id: 2, name: "Next.js" },
-            { id: 3, name: "Node.js" },
-            { id: 4, name: "MongoDB" },
-            { id: 5, name: "Tailwind CSS" },
+            { id: 1, name: "Insales" },
+            { id: 2, name: "Яндекс Метрика" },
+            { id: 3, name: "Яндекс Директ" },
+            { id: 4, name: "SEO" },
           ],
         },
         {
           id: 2,
-          name: "Интернет-магазин растений",
-          description:
-            "Магазин редких и декоративных растений с чистым и удобным интерфейсом.",
+          name: "Avrora-atl.ru",
           href: "",
           image: "/assets/projects/plant-shop.jpg",
           bgImage: "/assets/backgrounds/curtains.jpg",
           frameworks: [
-            { id: 1, name: "React" },
-            { id: 2, name: "Next.js" },
-            { id: 3, name: "Stripe API" },
-            { id: 4, name: "Tailwind CSS" },
+            { id: 1, name: "Landing Page" },
+            { id: 2, name: "TailwindCSS" },
+            { id: 3, name: "JavaScript" },
+            { id: 4, name: "HTML5" },
           ],
         },
         {
           id: 3,
-          name: "Маркетплейс Apple-техники",
-          description:
-            "E-commerce платформа для продуктов и аксессуаров Apple с акциями и фильтрацией по категориям.",
+          name: "Web-converter.ru",
           href: "",
           image: "/assets/projects/apple-tech-store.jpg",
           bgImage: "/assets/backgrounds/map.jpg",
           frameworks: [
-            { id: 1, name: "Blazor" },
-            { id: 2, name: "ASP.NET Core" },
-            { id: 3, name: "SQL Server" },
-            { id: 4, name: "Bootstrap" },
+            { id: 1, name: "Python" },
+            { id: 2, name: "TailwindCSS" },
+            { id: 3, name: "JavaScript" },
           ],
         },
         {
           id: 4,
-          name: "Магазин электроники и гаджетов",
-          description:
-            "Мультикатегорийный магазин электроники, бытовой техники и игровых устройств со спецпредложениями.",
+          name: "Интернет-магазин техники Apple",
           href: "",
           image: "/assets/projects/electronics-store.jpg",
           bgImage: "/assets/backgrounds/poster.jpg",
           frameworks: [
-            { id: 1, name: "Vue.js" },
-            { id: 2, name: "Laravel" },
-            { id: 3, name: "MySQL" },
-            { id: 4, name: "SCSS" },
+            { id: 1, name: "Insales" },
+            { id: 2, name: "Яндекс Метрика" },
           ],
         },
         {
           id: 5,
-          name: "Маркетплейс декора для дома",
-          description:
-            "Подборка дизайнерского декора: мебель, вазы ручной работы и интерьерные предметы.",
+          name: "Ювелирный интернет-магазин",
           href: "",
           image: "/assets/projects/home-decor-store.jpg",
           bgImage: "/assets/backgrounds/table.jpg",
           frameworks: [
-            { id: 1, name: "Angular" },
-            { id: 2, name: "Firebase" },
-            { id: 3, name: "GraphQL" },
-            { id: 4, name: "Material UI" },
+            { id: 1, name: "Insales" },
+            { id: 2, name: "Яндекс Метрика" },
+            { id: 3, name: "Яндекс Директ" },
+            { id: 4, name: "SEO" },
           ],
         },
         {
           id: 6,
-          name: "Магазин цифровых игр",
-          description:
-            "Игровая платформа со скидками, топами продаж и подборками по жанрам.",
+          name: "Интернет-магазин растений",
           href: "",
           image: "/assets/projects/game-store.jpg",
           bgImage: "/assets/backgrounds/curtains.jpg",
           frameworks: [
-            { id: 1, name: "Svelte" },
-            { id: 2, name: "Node.js" },
-            { id: 3, name: "MongoDB" },
-            { id: 4, name: "Chakra UI" },
+            { id: 1, name: "Shopify" },
           ],
         },
       ],
