@@ -30,11 +30,11 @@ results driven webs/apps`,
       databases: "Databases",
     },
     services: {
-      subTitle: "Behind the scene, Beyond the screen",
-      title: "Service",
-      text: `I build secure, high-performance full-stack apps
-    with smooth UX to drive growth 
-    not headaches.`,
+      subTitle: "Built for results",
+      title: "Services",
+      text: `I offer your business not just
+    a website or ad campaign,
+    but real customers.`,
       items: [
         {
           title: "FullStack Development",
@@ -42,54 +42,45 @@ results driven webs/apps`,
             "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations--ensuring reliability at every layer.",
           items: [
             {
-              title: "Backend Engineering",
-              description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+              title: "Landing Page",
             },
             {
-              title: "Frontend Excellence",
-              description: "(React, Vue, TypeScript, Interactive UI/UX)",
+              title: "E-commerce Store",
             },
             {
-              title: "Database Design",
-              description: "(SQL/NoSQL Optimization, Scalable Structures)",
+              title: "CMS-based Solution with Insales / Shopify",
+            },
+          ],
+        },
+        {
+          title: "Marketing & Customer Acquisition",
+          description:
+            "A good website does not make money on its own if the right people never reach it. I help build a steady flow of customers through paid ads, SEO, and analytics, so your website not only looks strong but consistently drives leads, sales, and business growth.",
+          items: [
+            {
+              title: "Yandex Direct / Google Ads Campaign Setup",
+            },
+            {
+              title: "SEO Optimization",
+            },
+            {
+              title: "Traffic & Lead Analytics",
             },
           ],
         },
         {
           title: "DevOps & Cloud Solutions",
           description:
-            "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly--24/7, at any scale.",
+            "Deployment should not be a gamble. I automate infrastructure, strengthen security, and use cloud platforms so your application runs smoothly--24/7 and at any scale.",
           items: [
             {
               title: "CI/CD Pipelines",
-              description: "(GitHub Actions, Docker, Kubernetes)",
             },
             {
               title: "Server Management",
-              description: "(Linux, Nginx, Load Balancing)",
             },
             {
-              title: "Performance Tuning",
-              description: "(Caching, Compression, Lighthouse 90+ Scores)",
-            },
-          ],
-        },
-        {
-          title: "Security & Optimization",
-          description:
-            "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
-          items: [
-            {
-              title: "Code Audits",
-              description: "(Refactoring, Tech Debt Cleanup)",
-            },
-            {
-              title: "Pen Testing",
-              description: "(Vulnerability Assessments)",
-            },
-            {
-              title: "SEO Tech Stack",
-              description: "(SSR, Metadata, Structured Data)",
+              title: "Performance Optimization",
             },
           ],
         },
@@ -100,33 +91,30 @@ results driven webs/apps`,
           items: [
             {
               title: "Cross-Platform Apps",
-              description: "(Single codebase for iOS/Android/Web)",
             },
             {
               title: "PWAs",
-              description: "(Offline mode, Push Notifications)",
             },
             {
               title: "E-Commerce",
-              description: "(Checkout flows, Payment Gateways, Inventory APIs)",
             },
           ],
         },
       ],
     },
     about: {
-      subTitle: "Code with purpose, Built to scale",
+      subTitle: "Marketing in strategy, development in detail",
       title: "About",
-      text: `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`,
-      imageAlt: "man",
-      body: `Obsessed with building fast, intuitive apps--from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-When I'm not shipping:
-Open-sourcing my latest experiment (or hacking on yours)
-Teaching devs on Twitch/YouTube--because rising tides lift all ships
-Rock climbing (problem-solving with real stakes)
-Strumming chords while CI pipelines pass (multitasking at its finest)`,
+      text: `I combine development and marketing
+    so websites do not just work,
+    but bring real customers`,
+      imageAlt: "marketer-developer portrait",
+      body: `I am as passionate about marketing as I am about development. For me, a website is not just a polished interface, but a tool that should attract attention, communicate product value, and turn visitors into leads. That is why I look at every project from two angles: as a developer responsible for speed, structure, and reliability, and as a marketer focused on traffic, conversion, and user behavior.
+When I am not working on projects:
+studying ads, SEO, analytics, and user behavior
+testing new approaches to landing pages, funnels, and offers
+breaking down websites and ad campaigns to understand why some sell better than others
+studying the Monsters of Marketing course by Konstantin Gorbunov to better understand strategy, advertising, and systematic customer acquisition`,
     },
     works: {
       subTitle: "Logic meets Aesthetics, Seamlessly",
@@ -291,11 +279,11 @@ Strumming chords while CI pipelines pass (multitasking at its finest)`,
       databases: "Базы данных",
     },
     services: {
-      subTitle: "За кадром, за пределами экрана",
+      subTitle: "Работаю на результат",
       title: "Услуги",
-      text: `Создаю безопасные и быстрые full-stack приложения
-    с плавным UX, которые растят бизнес,
-    а не создают головную боль.`,
+      text: `Предлагаю вашему бизнесу не просто
+    сайт или рекламную кампанию,
+    а живых клиентов`,
       items: [
         {
           title: "Full-stack разработка",
@@ -303,54 +291,45 @@ Strumming chords while CI pipelines pass (multitasking at its finest)`,
             "Вашему бизнесу нужна быстрая, безопасная и надежная цифровая основа. Я разрабатываю веб-приложения с чистой архитектурой, оптимизированными базами данных и стабильными интеграциями.",
           items: [
             {
-              title: "Backend-разработка",
-              description: "(REST/GraphQL API, микросервисы, авторизация)",
+              title: "Landing Page",
             },
             {
-              title: "Frontend высокого уровня",
-              description: "(React, Vue, TypeScript, интерактивный UI/UX)",
+              title: "Интернет-магазин",
             },
             {
-              title: "Проектирование баз данных",
-              description: "(SQL/NoSQL оптимизация, масштабируемые структуры)",
+              title: "Решение на основе CMS Insales / Shopify",
+            },
+          ],
+        },
+        {
+          title: "Маркетинг и привлечение клиентов",
+          description:
+            "Хороший сайт сам по себе не приносит деньги, если на него не приходят нужные люди. Я помогаю настроить поток клиентов через рекламу, SEO и аналитику, чтобы сайт не просто выглядел сильным, а стабильно работал на заявки, продажи и рост бизнеса.",
+          items: [
+            {
+              title: "Настройка Яндекс Директ / Google Ads",
+            },
+            {
+              title: "SEO-оптимизация сайта",
+            },
+            {
+              title: "Анализ трафика и заявок",
             },
           ],
         },
         {
           title: "DevOps и облачные решения",
           description:
-            "Деплой не должен быть лотереей. Я автоматизирую инфраструктуру, усиливаю безопасность и использую облачные платформы, чтобы приложение стабильно работало 24/7 при любой нагрузке.",
+            "Деплой не должен быть лотереей. Я автоматизирую инфраструктуру, усиливаю безопасность и использую облака, чтобы ваше приложение работало плавно — 24/7 и на любом масштабе.",
           items: [
             {
               title: "CI/CD пайплайны",
-              description: "(GitHub Actions, Docker, Kubernetes)",
             },
             {
               title: "Управление серверами",
-              description: "(Linux, Nginx, балансировка нагрузки)",
             },
             {
               title: "Оптимизация производительности",
-              description: "(Кэширование, сжатие, Lighthouse 90+)",
-            },
-          ],
-        },
-        {
-          title: "Безопасность и оптимизация",
-          description:
-            "Медленные или уязвимые приложения разрушают доверие. Я усиливаю защиту, закрываю узкие места и помогаю продукту оставаться быстрым, безопасным и масштабируемым.",
-          items: [
-            {
-              title: "Аудит кода",
-              description: "(Рефакторинг, чистка технического долга)",
-            },
-            {
-              title: "Пентесты",
-              description: "(Оценка уязвимостей)",
-            },
-            {
-              title: "Техническое SEO",
-              description: "(SSR, метаданные, структурированные данные)",
             },
           ],
         },
@@ -361,33 +340,30 @@ Strumming chords while CI pipelines pass (multitasking at its finest)`,
           items: [
             {
               title: "Кроссплатформенные приложения",
-              description: "(Единая кодовая база для iOS/Android/Web)",
             },
             {
               title: "PWA",
-              description: "(Офлайн-режим, push-уведомления)",
             },
             {
               title: "E-commerce",
-              description: "(Checkout, платежи, API для каталога и склада)",
             },
           ],
         },
       ],
     },
     about: {
-      subTitle: "Код с целью, продукт с запасом роста",
+      subTitle: "Маркетинг в логике, разработка в деталях",
       title: "Обо мне",
-      text: `Люблю чистую архитектуру
-    и создаю масштабируемые быстрые решения
-    от прототипа до продакшена`,
-      imageAlt: "портрет",
-      body: `Я создаю быстрые и понятные приложения: от точных React-интерфейсов до надежного serverless-бэкенда. Каждая строка кода должна ощущаться пользователем как качество.
-Когда я не выпускаю релизы:
-Публикую open-source эксперименты или помогаю с вашими
-Объясняю разработку на Twitch/YouTube
-Занимаюсь скалолазанием, где решение задач сразу проверяется на практике
-Играю на гитаре, пока CI успешно проходит пайплайны`,
+      text: `Я соединяю разработку и маркетинг,
+    чтобы сайты не просто работали,
+    а приводили клиентов`,
+      imageAlt: "портрет маркетолога-разработчика",
+      body: `Я увлекаюсь маркетингом так же сильно, как и разработкой. Для меня сайт — это не просто красивый интерфейс, а инструмент, который должен привлекать внимание, объяснять ценность продукта и приводить к заявкам. Поэтому я смотрю на проект сразу с двух сторон: как разработчик, который отвечает за скорость, структуру и надежность, и как маркетолог, который думает о трафике, конверсии и поведении пользователя.
+Когда я не работаю над проектами:
+изучаю рекламу, SEO, аналитику и поведение пользователей
+тестирую новые подходы к лендингам, воронкам и офферам
+разбираю сайты и рекламные кампании, чтобы понимать, почему одни продают лучше других
+прохожу обучение на курсе «Монстры маркетинга» от Константина Горбунова, чтобы глубже разбираться в стратегии, рекламе и системном привлечении клиентов`,
     },
     works: {
       subTitle: "Логика встречает эстетику",
