@@ -3,17 +3,10 @@ import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { AnimatedTextLines } from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useLanguage } from "../i18n/useLanguage";
 
 const About = () => {
-  const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const { t } = useLanguage();
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -41,9 +34,9 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Cod with purpose, Built to scale"}
-        title={"About"}
-        text={text}
+        subTitle={t.about.subTitle}
+        title={t.about.title}
+        text={t.about.text}
         textColor={"text-white"}
         withScrollTrigger={true}
       />
@@ -51,10 +44,10 @@ const About = () => {
         <img
           ref={imgRef}
           src="images/man.jpg"
-          alt="man"
+          alt={t.about.imageAlt}
           className="w-md rounded-3xl"
         />
-        <AnimatedTextLines text={aboutText} className={"w-full"} />
+        <AnimatedTextLines text={t.about.body} className={"w-full"} />
       </div>
     </section>
   );

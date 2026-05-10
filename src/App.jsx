@@ -9,9 +9,11 @@ import Works from "./sections/Works";
 import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
+import { useLanguage } from "./i18n/useLanguage";
 
 const App = () => {
   const { progress } = useProgress();
+  const { t } = useLanguage();
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
@@ -25,7 +27,7 @@ const App = () => {
       {!isReady && (
         <div className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-black text-white transition-opacity duration-700 font-light">
           <p className="mb-4 text-xl tracking-widest animate-pulse">
-            Loading {Math.floor(progress)}%
+            {t.loading} {Math.floor(progress)}%
           </p>
           <div className="relative h-1 overflow-hidden rounded w-60 bg-white/20">
             <div

@@ -1,18 +1,17 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-import { projects } from "../constants";
 import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useLanguage } from "../i18n/useLanguage";
 
 const Works = () => {
+  const { t } = useLanguage();
+  const projects = t.works.projects;
   const overlayRefs = useRef([]);
   const previewRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(null);
-  const text = `Featured projects that have been meticulously
-    crafted with passion to drive
-    results and impact.`;
 
   const mouse = useRef({ x: 0, y: 0 });
   const moveX = useRef(null);
@@ -102,9 +101,9 @@ const Works = () => {
   return (
     <section id="work" className="flex flex-col min-h-screen">
       <AnimatedHeaderSection
-        subTitle={"Logic meets Aesthetics, Seamlessly"}
-        title={"Works"}
-        text={text}
+        subTitle={t.works.subTitle}
+        title={t.works.title}
+        text={t.works.text}
         textColor={"text-black"}
         withScrollTrigger={true}
       />
@@ -152,12 +151,12 @@ const Works = () => {
             <div className="relative flex items-center justify-center px-10 md:hidden h-[400px]">
               <img
                 src={project.bgImage}
-                alt={`${project.name}-bg-image`}
+                alt={project.name}
                 className="object-cover w-full h-full rounded-md brightness-50"
               />
               <img
                 src={project.image}
-                alt={`${project.name}-image`}
+                alt={project.name}
                 className="absolute bg-center px-14 rounded-xl"
               />
             </div>
@@ -171,7 +170,7 @@ const Works = () => {
           {currentIndex !== null && (
             <img
               src={projects[currentIndex].image}
-              alt="preview"
+              alt={t.works.previewAlt}
               className="object-cover w-full h-full"
             />
           )}

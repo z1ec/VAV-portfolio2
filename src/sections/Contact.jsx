@@ -1,19 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-import Marquee from "../components/Marquee";
-import { socials } from "../constants";
 import gsap from "gsap";
+import { useLanguage } from "../i18n/useLanguage";
 
 const Contact = () => {
-  const text = `Got a question, how or project Idea?
-    WE’D love to hear from you and discus further!`;
-  const items = [
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-  ];
+  const { t } = useLanguage();
+  const socials = t.socials;
+
   useGSAP(() => {
     gsap.from(".social-link", {
       y: 100,
@@ -34,30 +27,30 @@ const Contact = () => {
     >
       <div>
         <AnimatedHeaderSection
-          subTitle={"You Dream It, I Code it"}
-          title={"Contact"}
-          text={text}
+          subTitle={t.contact.subTitle}
+          title={t.contact.title}
+          text={t.contact.text}
           textColor={"text-white"}
           withScrollTrigger={true}
         />
         <div className="flex px-10 font-light text-white uppercase lg:text-[32px] text-[26px] leading-none mb-10">
           <div className="flex flex-col w-full gap-10">
             <div className="social-link">
-              <h2>E-mail</h2>
+              <h2>{t.contact.email}</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
-                JohnDoe@gmail.com
+                {t.contact.emailAddress}
               </p>
             </div>
             <div className="social-link">
-              <h2>Phone</h2>
+              <h2>{t.contact.phone}</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl lowercase md:text-2xl lg:text-3xl">
-                +33 7 12 12 32 12
+                {t.contact.phoneNumber}
               </p>
             </div>
             <div className="social-link">
-              <h2>Social Media</h2>
+              <h2>{t.contact.socials}</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <div className="flex flex-wrap gap-2">
                 {socials.map((social, index) => (
@@ -76,7 +69,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Marquee items={items} className="text-white bg-transparent" />
     </section>
   );
 };
