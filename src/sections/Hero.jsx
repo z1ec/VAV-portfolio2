@@ -24,6 +24,7 @@ const Hero = () => {
         title={t.hero.title}
         text={t.hero.text}
         textColor={"text-black"}
+        hideSubTitleOnMobile={true}
       />
       <figure
         className="absolute inset-0 -z-50"

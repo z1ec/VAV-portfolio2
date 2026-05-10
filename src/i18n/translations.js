@@ -16,9 +16,9 @@ export const translations = {
     hero: {
       subTitle: "404 No Bugs Found",
       title: "Fomin Vladimir",
-      text: `I help growing brands and startups gain an
-unfair advantage through premium
-results driven webs/apps`,
+      text: `A business needs more than a website,
+it needs a system of product, traffic,
+and marketing that brings leads`,
     },
     serviceSummary: {
       architecture: "Architecture",
@@ -244,9 +244,9 @@ When I am not busy with projects:
     hero: {
       subTitle: "404 Ошибок не найдено",
       title: "Фомин Владимир",
-      text: `Помогаю растущим брендам и стартапам
-получать преимущество через премиальные
-сайты и приложения, работающие на результат`,
+      text: `Бизнесу нужен не просто сайт,
+а система из продукта, трафика
+и маркетинга, которая дает заявки`,
     },
     serviceSummary: {
       architecture: "Архитектура",

@@ -9,6 +9,7 @@ const AnimatedHeaderSection = ({
   text,
   textColor,
   withScrollTrigger = false,
+  hideSubTitleOnMobile = false,
 }) => {
   const contextRef = useRef(null);
   const headerRef = useRef(null);
@@ -43,10 +44,12 @@ const AnimatedHeaderSection = ({
       <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
         <div
           ref={headerRef}
-          className="flex flex-col justify-center gap-12 pt-16 sm:gap-16"
+          className="flex flex-col justify-center gap-6 pt-16 sm:gap-6"
         >
           <p
-            className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${textColor}`}
+            className={`text-sm font-light tracking-[0.5rem] uppercase px-10 ${textColor} ${
+              hideSubTitleOnMobile ? "hidden sm:block" : ""
+            }`}
           >
             {subTitle}
           </p>
