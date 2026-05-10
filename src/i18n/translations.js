@@ -15,7 +15,7 @@ export const translations = {
     },
     hero: {
       subTitle: "404 No Bugs Found",
-      title: "Ali Sanati",
+      title: "Fomin Vladimir",
       text: `I help growing brands and startups gain an
 unfair advantage through premium
 results driven webs/apps`,
@@ -199,8 +199,8 @@ When I am not busy with projects:
     },
     contactSummary: {
       start: "Let's build a",
-      strong: "memorable",
-      italic: "inspiring",
+      strong: "selling",
+      italic: "user-friendly",
       end: "web application",
       together: "together",
     },
@@ -210,22 +210,21 @@ When I am not busy with projects:
       text: `Got a question, how or project Idea?
     We'd love to hear from you and discuss further!`,
       email: "E-mail",
-      emailAddress: "JohnDoe@gmail.com",
+      emailAddress: "vav3538@gmail.com",
       phone: "Phone",
-      phoneNumber: "+33 7 12 12 32 12",
+      phoneNumber: "+7 (905) 578-57-89",
       socials: "Social Media",
     },
     socials: [
       {
-        name: "Instagram",
-        href: "https://www.instagram.com/ali.sanatidev/reels/",
+        name: "Telegram",
+        href: "https://t.me/F44gh",
       },
       {
-        name: "Youtube",
-        href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
+        name: "Marketing Telegram",
+        href: "https://t.me/fomin_direct",
       },
-      { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-      { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+      { name: "GitHub", href: "https://github.com/z1ec" },
     ],
   },
   ru: {
@@ -244,7 +243,7 @@ When I am not busy with projects:
     },
     hero: {
       subTitle: "404 Ошибок не найдено",
-      title: "Али Санати",
+      title: "Фомин Владимир",
       text: `Помогаю растущим брендам и стартапам
 получать преимущество через премиальные
 сайты и приложения, работающие на результат`,
@@ -428,8 +427,8 @@ When I am not busy with projects:
     },
     contactSummary: {
       start: "Давайте создадим",
-      strong: "запоминающееся",
-      italic: "вдохновляющее",
+      strong: "продающее",
+      italic: "удобное",
       end: "веб-приложение",
       together: "вместе",
     },
@@ -439,22 +438,21 @@ When I am not busy with projects:
       text: `Есть вопрос или идея проекта?
     Буду рад обсудить детали!`,
       email: "Почта",
-      emailAddress: "JohnDoe@gmail.com",
+      emailAddress: "vav3538@gmail.com",
       phone: "Телефон",
-      phoneNumber: "+33 7 12 12 32 12",
+      phoneNumber: "+7 (905) 578-57-89",
       socials: "Соцсети",
     },
     socials: [
       {
-        name: "Instagram",
-        href: "https://www.instagram.com/ali.sanatidev/reels/",
+        name: "Личный Telegram",
+        href: "https://t.me/F44gh",
       },
       {
-        name: "Youtube",
-        href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
+        name: "Telegram про маркетинг",
+        href: "https://t.me/fomin_direct",
       },
-      { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-      { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+      { name: "GitHub", href: "https://github.com/z1ec" },
     ],
   },
 };
