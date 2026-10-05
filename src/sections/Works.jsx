@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { useRef, useState } from "react";
 import gsap from "gsap";
@@ -138,7 +137,19 @@ const Works = () => {
               <h2 className="lg:text-[32px] text-[26px] leading-none">
                 {project.name}
               </h2>
-              <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="md:size-6 size-5"
+                aria-hidden="true"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
             </div>
             {/* divider */}
             <div className="w-full h-0.5 bg-black/80" />
@@ -158,11 +169,15 @@ const Works = () => {
               <img
                 src={project.bgImage}
                 alt={project.name}
+                loading="lazy"
+                decoding="async"
                 className="object-cover w-full h-full rounded-md brightness-50"
               />
               <img
                 src={project.image}
                 alt={project.name}
+                loading="lazy"
+                decoding="async"
                 className="absolute bg-center px-14 rounded-xl"
               />
             </div>

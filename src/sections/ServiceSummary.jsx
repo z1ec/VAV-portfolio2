@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../i18n/useLanguage";
 gsap.registerPlugin(ScrollTrigger);
 const ServiceSummary = () => {
