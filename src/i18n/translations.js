@@ -1,7 +1,6 @@
 export const translations = {
   en: {
     languageLabel: "RU",
-    loading: "Loading",
     nav: {
       links: [
         { id: "home", label: "home" },
@@ -16,9 +15,9 @@ export const translations = {
     hero: {
       subTitle: "404 No Bugs Found",
       title: "Fomin Vladimir",
-      text: `A business needs more than a website,
-it needs a system of product, traffic,
-and marketing that brings leads`,
+      text: `I build web products end to end:
+from architecture and APIs
+to deployment and support`,
     },
     serviceSummary: {
       architecture: "Architecture",
@@ -33,8 +32,8 @@ and marketing that brings leads`,
       subTitle: "Built for results",
       title: "Services",
       text: `I offer your business not just
-    a website or ad campaign,
-    but real customers.`,
+    a website, but a reliable product
+    that works for your customers.`,
       items: [
         {
           title: "FullStack Development",
@@ -49,22 +48,6 @@ and marketing that brings leads`,
             },
             {
               title: "CMS-based Solution with Insales / Shopify",
-            },
-          ],
-        },
-        {
-          title: "Marketing & Customer Acquisition",
-          description:
-            "A good website does not make money on its own if the right people never reach it. I help build a steady flow of customers through paid ads, SEO, and analytics, so your website not only looks strong but consistently drives leads, sales, and business growth.",
-          items: [
-            {
-              title: "Yandex Direct / Google Ads Campaign Setup",
-            },
-            {
-              title: "SEO Optimization",
-            },
-            {
-              title: "Traffic & Lead Analytics",
             },
           ],
         },
@@ -103,34 +86,17 @@ and marketing that brings leads`,
       ],
     },
     about: {
-      subTitle: "Marketing in strategy, development in detail",
+      subTitle: "Clean architecture, careful details",
       title: "About",
-      text: `I combine development and marketing
-    so websites do not just work,
-    but bring real customers`,
-      imageAlt: "marketer-developer portrait",
-      body: `For me, a website is not just a polished interface, but a tool that should attract attention, communicate product value, and turn visitors into leads.
+      text: `I build websites and web apps
+    that are fast, reliable
+    and easy to grow`,
+      imageAlt: "full-stack developer portrait",
+      body: `For me, a website is not just a polished interface, but a reliable product: clear architecture, fast loading, and convenient maintenance.
 When I am not busy with projects:
-◆ testing new approaches to landing pages, funnels, and offers
-◆ breaking down websites and ad campaigns to understand why some sell better than others
-◆ studying the Monsters of Marketing course by Konstantin Gorbunov to better understand strategy, advertising, and systematic customer acquisition`,
-    },
-    marketing: {
-      subTitle: "Traffic, analytics, and strategy",
-      title: "Marketing",
-      text: `I help businesses get not just traffic, but real leads from their websites.
-I set up Yandex Direct and Google Ads, work with SEO, design sales funnels, create media plans, and improve the customer journey from the first website visit to a submitted lead. I am also currently studying the Monsters of Marketing course by Konstantin Gorbunov and applying that knowledge in real projects.
-My goal is to make advertising, the website, and strategy work together and help businesses attract customers in a clear and measurable way.`,
-      channelText: "More about marketing in my Telegram channel",
-      channelHref: "https://t.me/fomin_direct",
-      items: [
-        "Yandex Direct / Google Ads",
-        "SEO Optimization",
-        "Traffic & Lead Analytics",
-        "Sales Funnels",
-        "Media Plans",
-        "Marketing Strategy",
-      ],
+◆ exploring new tools and approaches in full-stack development
+◆ improving the performance and developer experience of my own projects
+◆ automating deployment and infrastructure`,
     },
     works: {
       subTitle: "Logic meets aesthetics",
@@ -148,9 +114,6 @@ My goal is to make advertising, the website, and strategy work together and help
           bgImage: "/assets/backgrounds/blanket.webp",
           frameworks: [
             { id: 1, name: "Insales" },
-            { id: 2, name: "Yandex Metrica" },
-            { id: 3, name: "Yandex Direct" },
-            { id: 4, name: "SEO" },
           ],
         },
         {
@@ -186,7 +149,6 @@ My goal is to make advertising, the website, and strategy work together and help
           bgImage: "/assets/backgrounds/poster.webp",
           frameworks: [
             { id: 1, name: "Insales" },
-            { id: 2, name: "Yandex Metrica" },
           ],
         },
         {
@@ -197,9 +159,6 @@ My goal is to make advertising, the website, and strategy work together and help
           bgImage: "/assets/backgrounds/table.webp",
           frameworks: [
             { id: 1, name: "Insales" },
-            { id: 2, name: "Yandex Metrica" },
-            { id: 3, name: "Yandex Direct" },
-            { id: 4, name: "SEO" },
           ],
         },
         {
@@ -216,7 +175,7 @@ My goal is to make advertising, the website, and strategy work together and help
     },
     contactSummary: {
       start: "Let's build a",
-      strong: "selling",
+      strong: "reliable",
       italic: "user-friendly",
       end: "web application",
       together: "together",
@@ -237,16 +196,11 @@ My goal is to make advertising, the website, and strategy work together and help
         name: "Telegram",
         href: "https://t.me/F44gh",
       },
-      {
-        name: "Marketing Telegram",
-        href: "https://t.me/fomin_direct",
-      },
       { name: "GitHub", href: "https://github.com/z1ec" },
     ],
   },
   ru: {
     languageLabel: "EN",
-    loading: "Загрузка",
     nav: {
       links: [
         { id: "home", label: "главная" },
@@ -261,9 +215,9 @@ My goal is to make advertising, the website, and strategy work together and help
     hero: {
       subTitle: "404 Ошибок не найдено",
       title: "Фомин Владимир",
-      text: `Бизнесу нужен не просто сайт,
-а система из продукта, трафика
-и маркетинга, которая дает заявки`,
+      text: `Разрабатываю веб-продукты под ключ:
+от архитектуры и API
+до деплоя и поддержки`,
     },
     serviceSummary: {
       architecture: "Архитектура",
@@ -278,8 +232,8 @@ My goal is to make advertising, the website, and strategy work together and help
       subTitle: "Работаю на результат",
       title: "Услуги",
       text: `Предлагаю вашему бизнесу не просто
-    сайт или рекламную кампанию,
-    а живых клиентов`,
+    сайт, а надежный продукт,
+    который работает на ваших клиентов`,
       items: [
         {
           title: "Full-stack разработка",
@@ -294,22 +248,6 @@ My goal is to make advertising, the website, and strategy work together and help
             },
             {
               title: "Решение на основе CMS Insales / Shopify",
-            },
-          ],
-        },
-        {
-          title: "Маркетинг и привлечение клиентов",
-          description:
-            "Хороший сайт сам по себе не приносит деньги, если на него не приходят нужные люди. Я помогаю настроить поток клиентов через рекламу, SEO и аналитику, чтобы сайт не просто выглядел сильным, а стабильно работал на заявки, продажи и рост бизнеса.",
-          items: [
-            {
-              title: "Настройка Яндекс Директ / Google Ads",
-            },
-            {
-              title: "SEO-оптимизация сайта",
-            },
-            {
-              title: "Анализ трафика и заявок",
             },
           ],
         },
@@ -348,34 +286,17 @@ My goal is to make advertising, the website, and strategy work together and help
       ],
     },
     about: {
-      subTitle: "Маркетинг в логике, разработка в деталях",
+      subTitle: "Чистая архитектура, внимание к деталям",
       title: "Обо мне",
-      text: `Я соединяю разработку и маркетинг,
-    чтобы сайты не просто работали,
-    а приводили клиентов`,
-      imageAlt: "портрет маркетолога-разработчика",
-      body: `Для меня сайт — это не просто красивый интерфейс, а инструмент, который должен привлекать внимание, объяснять ценность продукта и приводить к заявкам.
+      text: `Делаю сайты и веб-приложения,
+    которые быстро работают,
+    надежны и легко растут`,
+      imageAlt: "портрет full-stack разработчика",
+      body: `Для меня сайт — это не просто красивый интерфейс, а надежный продукт: понятная архитектура, быстрая загрузка и удобная поддержка.
 Когда я не занят проектами:
-◆ тестирую новые подходы к лендингам, воронкам и офферам
-◆ разбираю сайты и рекламные кампании, чтобы понимать, почему одни продают лучше других
-◆ прохожу обучение на курсе «Монстры маркетинга» от Константина Горбунова, чтобы глубже разбираться в стратегии, рекламе и системном привлечении клиентов`,
-    },
-    marketing: {
-      subTitle: "Трафик, аналитика и стратегия",
-      title: "Маркетинг",
-      text: `Я помогаю бизнесу получать не просто трафик, а реальные заявки с сайта.
-Настраиваю Яндекс Директ и Google Ads, работаю с SEO, продумываю воронки продаж, составляю медиапланы и улучшаю путь клиента от первого перехода на сайт до заявки. Сейчас также прохожу курс «Монстры маркетинга» от Константина Горбунова и применяю эти знания в реальных проектах.
-Моя задача сделать так, чтобы реклама, сайт и стратегия работали вместе и помогали бизнесу привлекать клиентов понятным и измеримым способом.`,
-      channelText: "Подробнее про маркетинг в моем Telegram-канале",
-      channelHref: "https://t.me/fomin_direct",
-      items: [
-        "Яндекс Директ / Google Ads",
-        "SEO-оптимизация",
-        "Анализ трафика и заявок",
-        "Воронки продаж",
-        "Медиапланы",
-        "Маркетинговая стратегия",
-      ],
+◆ изучаю новые инструменты и подходы в full-stack разработке
+◆ улучшаю производительность и удобство разработки в своих проектах
+◆ автоматизирую деплой и инфраструктуру`,
     },
     works: {
       subTitle: "Логика встречает эстетику",
@@ -393,9 +314,6 @@ My goal is to make advertising, the website, and strategy work together and help
           bgImage: "/assets/backgrounds/blanket.webp",
           frameworks: [
             { id: 1, name: "Insales" },
-            { id: 2, name: "Яндекс Метрика" },
-            { id: 3, name: "Яндекс Директ" },
-            { id: 4, name: "SEO" },
           ],
         },
         {
@@ -431,7 +349,6 @@ My goal is to make advertising, the website, and strategy work together and help
           bgImage: "/assets/backgrounds/poster.webp",
           frameworks: [
             { id: 1, name: "Insales" },
-            { id: 2, name: "Яндекс Метрика" },
           ],
         },
         {
@@ -442,9 +359,6 @@ My goal is to make advertising, the website, and strategy work together and help
           bgImage: "/assets/backgrounds/table.webp",
           frameworks: [
             { id: 1, name: "Insales" },
-            { id: 2, name: "Яндекс Метрика" },
-            { id: 3, name: "Яндекс Директ" },
-            { id: 4, name: "SEO" },
           ],
         },
         {
@@ -461,7 +375,7 @@ My goal is to make advertising, the website, and strategy work together and help
     },
     contactSummary: {
       start: "Давайте создадим",
-      strong: "продающее",
+      strong: "надежное",
       italic: "удобное",
       end: "веб-приложение",
       together: "вместе",
@@ -481,10 +395,6 @@ My goal is to make advertising, the website, and strategy work together and help
       {
         name: "Личный Telegram",
         href: "https://t.me/F44gh",
-      },
-      {
-        name: "Telegram про маркетинг",
-        href: "https://t.me/fomin_direct",
       },
       { name: "GitHub", href: "https://github.com/z1ec" },
     ],

@@ -7,6 +7,14 @@ import { useGLTF } from "@react-three/drei";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+// The model is meshopt-quantized, so the scale/offset that restores the
+// original geometry lives on the glTF nodes and must be applied to the meshes.
+const nodeTransform = ({ position, quaternion, scale }) => ({
+  position,
+  quaternion,
+  scale,
+});
+
 export function Planet(props) {
   const shapeContainer = useRef(null);
   const shperesContainer = useRef(null);
@@ -48,30 +56,21 @@ export function Planet(props) {
     <group ref={shapeContainer} {...props} dispose={null}>
       <group ref={shperesContainer}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Sphere.geometry}
           material={materials["Material.002"]}
-          rotation={[0, 0, 0.741]}
+          {...nodeTransform(nodes.Sphere)}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Sphere2.geometry}
           material={materials["Material.001"]}
-          position={[0.647, 1.03, -0.724]}
-          rotation={[0, 0, 0.741]}
-          scale={0.223}
+          {...nodeTransform(nodes.Sphere2)}
         />
       </group>
       <mesh
         ref={ringContainer}
-        castShadow
-        receiveShadow
         geometry={nodes.Ring.geometry}
         material={materials["Material.001"]}
-        rotation={[-0.124, 0.123, -0.778]}
-        scale={2}
+        {...nodeTransform(nodes.Ring)}
       />
     </group>
   );
