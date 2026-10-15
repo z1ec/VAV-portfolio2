@@ -1,5 +1,9 @@
 name: Deploy
 
+# Every push to main (merge of a PR, a revert, a reset + force-push) builds the
+# site and publishes it to the VPS as a new release. The site is served from the
+# `current` symlink, so the switch is atomic and old releases stay for rollback.
+
 on:
   push:
     branches: [main]
@@ -8,6 +12,9 @@ on:
 concurrency:
   group: deploy
   cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
   deploy:
@@ -24,14 +31,49 @@ jobs:
       - run: npm run lint
       - run: npm run build
 
-      # Uploads only files that changed since the previous deploy
-      # (state is tracked in .ftp-deploy-sync-state.json on the server).
-      - name: Upload dist to hosting
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
-          local-dir: ./dist/
-          server-dir: ${{ secrets.FTP_DIR }}
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Publish release
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          KEEP_RELEASES: 5
+        run: |
+          set -euo pipefail
+
+          # DEPLOY_PATH must be the dedicated directory of THIS site only.
+          case "$DEPLOY_PATH" in
+            /var/www/html|/var/www/html/*|*finance*|*..*)
+              echo "Refusing to deploy: forbidden DEPLOY_PATH"; exit 1 ;;
+            /var/www/?*|/srv/?*|/home/?*/?*) ;;
+            *) echo "Refusing to deploy: unexpected DEPLOY_PATH"; exit 1 ;;
+          esac
+
+          RELEASE="$(date -u +%Y%m%d-%H%M%S)-${GITHUB_SHA::7}"
+          SSH="ssh -i $HOME/.ssh/deploy_key -p $SSH_PORT -o StrictHostKeyChecking=yes -o BatchMode=yes"
+          TARGET="$SSH_USER@$SSH_HOST"
+
+          # 1. upload the build into its own fresh release directory
+          $SSH "$TARGET" "mkdir -p '$DEPLOY_PATH/releases/$RELEASE'"
+          rsync -az --chmod=D755,F644 -e "$SSH" dist/ "$TARGET:$DEPLOY_PATH/releases/$RELEASE/"
+
+          # 2. atomically point `current` at it, then prune old releases
+          $SSH "$TARGET" "
+            set -e
+            cd '$DEPLOY_PATH'
+            ln -sfn 'releases/$RELEASE' current.tmp
+            mv -Tf current.tmp current
+            cd releases
+            ls -1dt */ | tail -n +$((KEEP_RELEASES + 1)) | xargs -r rm -rf --
+          "
+          echo "Deployed release $RELEASE"
