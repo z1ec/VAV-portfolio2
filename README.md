@@ -23,18 +23,35 @@ Re-optimise a new model with
 
 ## Deployment
 
-Every push to `main` runs `.github/workflows/deploy.yml`: lint, build, then upload
-`dist/` to the hosting over FTP (only changed files are sent).
+Every push to `main` (a merged PR, a `git revert`, a reset + force-push) runs
+`.github/workflows/deploy.yml`: lint, build, then `rsync` over SSH into a new
+release directory on the VPS and an atomic switch of the `current` symlink.
+The last 5 releases are kept.
 
-Set these in the repository settings (Settings → Secrets and variables → Actions):
+```
+/var/www/<site>/
+  releases/20261015-123000-ab12cd3/   <- one directory per deploy
+  current -> releases/...             <- nginx `root` points here
+```
 
-| Name | Kind | Example |
-| --- | --- | --- |
-| `FTP_HOST` | secret | `ftp.example.com` |
-| `FTP_USER` | secret | hosting FTP login |
-| `FTP_PASSWORD` | secret | hosting FTP password |
-| `FTP_DIR` | secret | `/www/fomin-vladimir.ru/` (trailing slash required) |
-| `FTP_PROTOCOL` | variable, optional | `ftps` (default) or `ftp` if the host has no TLS |
+Repository secrets (Settings -> Secrets and variables -> Actions):
 
-`public/.htaccess` configures compression and caching on Apache hosting. On nginx
-add equivalent `gzip`, `expires` and `types { model/gltf-binary glb; }` rules.
+| Name | Value |
+| --- | --- |
+| `SSH_HOST` | VPS address |
+| `SSH_USER` | the dedicated `deploy` user |
+| `SSH_PRIVATE_KEY` | private key of the deploy key pair |
+| `SSH_KNOWN_HOSTS` | output of `ssh-keyscan -p <port> <host>` |
+| `DEPLOY_PATH` | site directory, e.g. `/var/www/portfolio` |
+| `SSH_PORT` | optional, defaults to 22 |
+
+Manual rollback on the server (instant, without waiting for CI):
+
+```bash
+cd /var/www/<site>
+ls releases                          # pick a previous release
+ln -sfn releases/<name> current.tmp && mv -Tf current.tmp current
+```
+
+Rolling back in git (`git revert <commit>` and push to `main`) redeploys the
+older state automatically.
